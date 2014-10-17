@@ -1,0 +1,21 @@
+<ion-view title="Programma">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <img src="img/cover.jpg" width="100%"/>
+    <div class="list">
+    <ion-list ng-repeat="day in days" >
+	<div class="item item-divider">
+		{{day.day}}
+	</div>
+		<a class="item " ng-class="{ 'item-avatar' : speech.img }" ng-repeat="speech in day.speechs" href="#/app/speech/{{speech.id}}">
+
+			<img ng-if="speech.img" src="img/speakers/{{speech.img}}.jpeg">
+			<h2>{{ speech.title }}</h2>
+			<p>{{speech.time}} - {{ speech.author }}</p>
+		</a>
+    </ion-list>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+<ion-view title="Speech {{speech.time}}">
+  <ion-content class="has-header">
+	<div class="list card">
+		<div class="item item-avatar">
+		<img ng-if="speech.img" src="img/speakers/{{speech.img}}.jpeg">
+			<h2>{{speech.title}}</h2>
+			<p>{{ speech.author }}</p>
+		</div>
+
+		<div class="item item-image" style="padding:20px">
+			<!-- <img src="cover.jpg"> -->
+			Descrizione al momento non disponibile.
+		</div>
+
+		<a class="item item-icon-left assertive" href="#">
+			<i class="icon ion-clock"></i>
+			{{speech.time}}
+		</a>
+	</div>
+  </ion-content>
+</ion-view>

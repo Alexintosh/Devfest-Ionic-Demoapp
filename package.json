@@ -1,7 +1,7 @@
 {
   "name": "devfest",
   "version": "1.0.0",
-  "description": "devfest: An Ionic project",
+  "description": "devfest: A Ionic demo app for GDG Devfest 2014",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^0.7.1",
